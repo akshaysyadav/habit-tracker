@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<div class="container">
+  <h1>Welcome to Habit Tracker</h1>
+  <% if (user) { %>
+    <p>Hello <%= user.username %>! <a href="/logout">Logout</a></p>
+  <% } else { %>
+    <a href="/register">Register</a> | <a href="/login">Login</a>
+  <% } %>
+</div>
+<%- include('partials/footer') %>

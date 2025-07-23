@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<div class="container mt-5">
+  <h2>Create a New Habit</h2>
+  <form action="/habits" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Habit Title</label>
+      <input type="text" class="form-control" id="title" name="title" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea class="form-control" id="description" name="description"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Habit</button>
+  </form>
+</div>
+
+<%- include('../partials/footer') %>
